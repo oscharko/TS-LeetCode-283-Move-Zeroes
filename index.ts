@@ -28,19 +28,6 @@ const moveZeroesWhiteForLoop = function (nums: number[]): number[] {
   }
 }
 
-function moveZeroesFoorLoop(nums: number[]): number[] {
-  let j: number = 0
-
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== 0) {
-      const zeroes = nums[i]
-      nums[i] = 0
-      nums[j++] = zeroes
-    }
-  }
-  return nums
-};
-
 function moveZeroes(nums: number[]): number[] {
   /*
   # Description for array v:
