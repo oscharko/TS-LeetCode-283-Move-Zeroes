@@ -1,34 +1,7 @@
-let nums = [0]
+let nums = [0, 1, 0, 3, 12]
 
-// const moveZeroes = function(nums) {
-//   if (nums.length > 1 && nums.reduce((a, b) => a + b) != 0 && nums.indexOf(0) != -1) {
-//     nums.sort(function(a, b) { return a - b })
-//     while (nums[0] === 0) {
-//       nums.shift()
-//       nums.push(0)
-//     }
-//     return nums
-//   } else {
-//     return nums
-//   }
-// };
-
-// const moveZeroes = function(nums) {
-//   let indexOfZero = 0;
-//   for (let i = 0; i < nums.length; i++) {
-//     if (nums[i] != 0) {
-//       nums[indexOfZero] = nums[i];
-//       indexOfZero++;
-//     }
-//   }
-//   for (let i = indexOfZero; i < nums.length; i++) {
-//     nums[i] = 0;
-//   }
-//   return nums
-// };
-
-const moveZeroes = function(nums) {
-  let zeroArray = []
+const moveZeroesWhithConcat = function(nums: number[]): number[] {
+  let zeroArray: number[] = []
   if (nums.length > 1 && nums.reduce((a, b) => a + b) != 0 && nums.indexOf(0) != -1) {
     while (nums.indexOf(0) != -1) {
       nums.splice(nums.indexOf(0), 1)
@@ -39,8 +12,8 @@ const moveZeroes = function(nums) {
   return nums
 }
 
-const moveZeroes = function(nums) {
-  let zeroArray = []
+const moveZeroesWhiteForLoop = function (nums: number[]): number[]{
+  let zeroArray: number[]= []
   if (nums.length > 1 && nums.reduce((a, b) => a + b) != 0 && nums.indexOf(0) != -1) {
     while (nums.indexOf(0) != -1) {
       nums.splice(nums.indexOf(0), 1)
