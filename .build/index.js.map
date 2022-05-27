@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "sources": [],
-  "sourcesContent": [],
-  "mappings": "",
+  "sources": ["../index.ts"],
+  "sourcesContent": ["let nums = [0, 1, 0, 3, 12]\n\nconst moveZeroes = function(nums: number[]): number[] {\n  let zeroArray: number[] = []\n  if (nums.length > 1 && nums.reduce((a, b) => a + b) != 0 && nums.indexOf(0) != -1) {\n    while (nums.indexOf(0) != -1) {\n      nums.splice(nums.indexOf(0), 1)\n      zeroArray.push(0)\n    }\n    return nums.concat(zeroArray)\n  }\n  return nums\n}\n\nconst moveZeroesWhiteForLoop = function (nums: number[]): number[]{\n  let zeroArray: number[]= []\n  if (nums.length > 1 && nums.reduce((a, b) => a + b) != 0 && nums.indexOf(0) != -1) {\n    while (nums.indexOf(0) != -1) {\n      nums.splice(nums.indexOf(0), 1)\n      zeroArray.push(0)\n    }\n    for (let i = 0; i < zeroArray.length; i++) {\n      nums.push(0)\n    }\n    return nums\n  } else {\n    return nums\n  }\n}\n\nconsole.log(moveZeroes(nums))\n"],
+  "mappings": "AAAA,IAAI,OAAO,CAAC,GAAG,GAAG,GAAG,GAAG;AAExB,MAAM,aAAa,SAAS,OAA0B;AACpD,MAAI,YAAsB;AAC1B,MAAI,MAAK,SAAS,KAAK,MAAK,OAAO,CAAC,GAAG,MAAM,IAAI,MAAM,KAAK,MAAK,QAAQ,MAAM,IAAI;AACjF,WAAO,MAAK,QAAQ,MAAM,IAAI;AAC5B,YAAK,OAAO,MAAK,QAAQ,IAAI;AAC7B,gBAAU,KAAK;AAAA;AAEjB,WAAO,MAAK,OAAO;AAAA;AAErB,SAAO;AAAA;AAGT,MAAM,yBAAyB,SAAU,OAAyB;AAChE,MAAI,YAAqB;AACzB,MAAI,MAAK,SAAS,KAAK,MAAK,OAAO,CAAC,GAAG,MAAM,IAAI,MAAM,KAAK,MAAK,QAAQ,MAAM,IAAI;AACjF,WAAO,MAAK,QAAQ,MAAM,IAAI;AAC5B,YAAK,OAAO,MAAK,QAAQ,IAAI;AAC7B,gBAAU,KAAK;AAAA;AAEjB,aAAS,IAAI,GAAG,IAAI,UAAU,QAAQ,KAAK;AACzC,YAAK,KAAK;AAAA;AAEZ,WAAO;AAAA,SACF;AACL,WAAO;AAAA;AAAA;AAIX,QAAQ,IAAI,WAAW;",
   "names": []
 }
