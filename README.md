@@ -15,7 +15,7 @@ Given an integer array nums, move all 0's to the end of it while maintaining the
 - 1 <= nums.length <= 10^4
 - -2^31 <= nums[i] <= 2^31 - 1
 
-## first Solution with foor loop
-[LeetCode]()
+## final Solution with foor loop
+[LeetCode](https://leetcode.com/submissions/detail/708351708/)
 
 [![Run on Repl.it](https://repl.it/badge/github/oscharko/TS-LeetCode-283-Move-Zeroes)](https://replit.com/@oscharko/TS-LeetCode-283-Move-Zeroes)
