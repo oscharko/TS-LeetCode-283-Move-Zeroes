@@ -1,4 +1,4 @@
-let nums = [1]
+let nums = [0,1,0,3,12]
 
 const moveZeroesWhithConcat = function (nums: number[]): number[] {
   let zeroArray: number[] = []
